@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*design Table */
+
+table {
+    border-collapse: collapse;
+}
+
+.div_table {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    color: #252525;
+}
+
+.div_table thead tr {
+    background: radial-gradient( circle farthest-corner at 10% 20%, rgba(255, 209, 67, 0.7) 0%, rgba(255, 145, 83, 0.7) 90%);
+    color: rgb(41, 41, 41);
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 7px 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 172, 17, 0.2);
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.div_table table {
+    width: 100%;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+}
+
+table thead {
+    height: 50px;
+    font-weight: bold;
+}
+
+table thead tr td {
+    padding: 0 10px;
+}
+
+table tr td {
+    padding: 5px;
+    height: 40px;
+}
+
+
+/*PAGE LOGIN */
+
+#btn_login {
+    color: white;
+    background-color: orange;
+    height: 45px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    margin: 10px auto;
+    border: none;
+}
+
+#btn_login:hover {
+    background-color: rgb(238, 131, 0);
+    color: white;
+}
+
+#body_img {
+    background-color: white;
+}
+
+#div_login {
+    border: 2px solid black;
+    width: 80%;
+    margin: 140px auto;
+    height: 400px;
+}
+
+
+/*PAGE MAIN*/
+
+#img_full_logo {
+    height: 200px;
+    margin-left: 20px;
+}
+
+#div_logo_img {}
+
+#name {
+    font-size: 18px;
+    margin: auto;
+    color: white;
+}
+
+#dashboard {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.form-group {
+    display: flex;
+}
+
+#btn_mdp {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-group {
+    width: 45%;
+    margin: 10px auto;
+}
+
+
+/* BUTTON REFLECT*/
+
+#btn_inscri {
+    border: none;
+    background-color: transparent;
+    border-radius: none;
+    position: relative;
+    display: inline-block;
+    margin: 40px 0;
+    color: orange;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    height: 40px;
+}
+
+#btn_inscri:hover {
+    background: orange;
+    color: #050801;
+    box-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 25px orange, 0 0 35px orange;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+#btn_inscri span {
+    position: absolute;
+    display: block;
+}
+
+#btn_inscri span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, orange);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+#btn_inscri span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, orange);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+#btn_inscri span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, orange);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+#btn_inscri span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, orange);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* BUTTON REFLECT UPDATE*/
+
+#btn_modifier {
+    border: none;
+    background-color: transparent;
+    border-radius: none;
+    position: relative;
+    display: inline-block;
+    margin: 40px 0;
+    color: rgb(0, 157, 209);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    height: 40px;
+}
+
+#btn_modifier:hover {
+    background: rgb(0, 157, 209);
+    color: #050801;
+    box-shadow: 0 0 5px rgb(0, 157, 209), 0 0 15px rgb(0, 157, 209), 0 0 25px rgb(0, 157, 209), 0 0 35px rgb(0, 157, 209);
+    -webkit-box-reflect: below 3px linear-gradient(transparent, #0005);
+}
+
+#btn_modifier span {
+    position: absolute;
+    display: block;
+}
+
+#btn_modifier span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(0, 157, 209));
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+#btn_modifier span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(0, 157, 209));
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+#btn_modifier span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(0, 157, 209));
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+#btn_modifier span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(0, 157, 209));
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+#btn_reset {
+    background-color: transparent;
+    border: none;
+    transition: 0.5s ease-in-out all;
+}
+
+#btn_reset i {
+    color: orange;
+    font-size: 20px;
+}
+
+#btn_reset:hover {
+    transform: rotate(360deg);
+}
+
+.btn_actions i,
+.btn_supp i {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.my_iteam {
+    list-style: circle;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.form_select {
+    /* width: 100%;
+    border: 1px solid #CED4DA;
+    padding-left: 28px;
+    color: #5a5a5a;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 16px !important;
+    font-weight: 300; */
+    /* height: 20px;
+    font-size: 14px; */
+}
+
+
+/* Scroll bar */
+
+*::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #252525;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 4px solid white;
+    /* creates padding around scroll thumb */
+}
+
+
+/*Impression ISCRIPTION*/
+
+#impr_inscri {
+    border: 2px solid darkorange;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px darkorange;
+}
+
+#impr_inscri h1 {
+    font-size: 20px;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#impr_inscri .img_imp,
+.div_imp {
+    width: 240px;
+    margin: 0 auto;
+}
+
+.recu_inscri {
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.recu_inscri tr,
+td {
+    background-color: transparent;
+    border: none;
+}
+
+.recu_inscri tr td {
+    text-align: center;
+}
+
+.recu_inscri h3 {
+    display: inline;
+    font-size: 18px;
+    color: darkorange;
+}
+
+#btn_imprimer {
+    width: 20%;
+    margin: 20px auto;
+    transform: translate(200%);
+    background-color: orange;
+    border: none;
+    transition: 0.3s ease;
+}
+
+#btn_imprimer:hover {
+    background-color: rgb(224, 123, 0);
+}
+
+
+/*PAGE PARAMETRE*/
+
+.parametre_main {
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+
+/*NAV-BAR*/
+
+.my_nav {
+    margin-bottom: 4px;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.my_nav:hover {
+    color: white;
+    text-decoration: none;
+    transform: translateX(10%);
+}
+
+.my_nav:hover i {
+    transform: translateX(50%);
+}
+
+.my_nav i {
+    font-size: 15px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item .menu-arow {
+    color: white;
+}
+
+
+/* Paiement */
+
+.info_paiement {
+    margin: 10px;
+}
+
+.info_paiement span {
+    color: darkorange;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/*FORM AJOUTER*/
+
+.card {
+    padding: 30px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* border: none !important;*/
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+    /* border: 5px outset #252525; */
+    border-radius: 5px;
+}
+
+.blue-text {
+    color: #00BCD4
+}
+
+.form-control-label {
+    margin-bottom: 0
+}
+
+input,
+textarea,
+button {
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 16px !important;
+    font-weight: 300
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+
+.btn-block {
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;
+    height: 43px;
+    cursor: pointer
+}
+
+.btn-block:hover {
+    color: #fff !important
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+#div_header {
+    background-color: #252525;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#div_footer {
+    background-color: #252525;
+    border-radius: 10px;
+}
+
+#div_header h4 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
